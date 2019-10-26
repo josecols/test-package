@@ -20,5 +20,6 @@ class Contact(ndb.Model):
         contact.name = data.get('name')
         contact.phone = data.get('phone')
         contact.email = data.get('email')
+        contact.put()
 
         return contact
